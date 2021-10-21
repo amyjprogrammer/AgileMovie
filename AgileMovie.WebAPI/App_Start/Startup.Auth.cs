@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using AgileMovie.WebAPI.Providers;
 using AgileMovie.WebAPI.Models;
+using AgileMovie.Data;
 
 namespace AgileMovie.WebAPI
 {

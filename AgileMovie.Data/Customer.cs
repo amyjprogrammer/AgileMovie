@@ -8,5 +8,6 @@ namespace AgileMovie.Data
 {
     public class Customer
     {
+        public int CustomerId { get; set; }
     }
 }

@@ -8,10 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1A8C98D-31AA-406E-8D26-D6778635CC90}"
 	ProjectSection(SolutionItems) = preProject
 		AgileTickets.txt = AgileTickets.txt
-		..\..\Users\munch\Downloads\PersonaOne.png = ..\..\Users\munch\Downloads\PersonaOne.png
-		..\..\Users\munch\Downloads\PersonaTwo.png = ..\..\Users\munch\Downloads\PersonaTwo.png
 		README.md = README.md
-		..\..\Users\munch\Downloads\Sprint.PNG = ..\..\Users\munch\Downloads\Sprint.PNG
 		UserStories.txt = UserStories.txt
 	EndProjectSection
 EndProject
