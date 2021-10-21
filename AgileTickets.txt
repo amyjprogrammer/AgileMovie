@@ -1,0 +1,95 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Tickets*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Points- 1
+Class- Customer
+CustomerId Int [Key]
+Guid CustomerUnique
+First Name (string)
+Last Name (string)
+FullName -use above
+	return $"{FirstName} {LastName}";
+Email (string)
+Birthdate (DateTime) -could be a backlog
+bool IsBirthdate14DaysAway - could be a backlog
+	if(DateTime.Now -birthdate == 14)
+		send email (stretch goal)
+                                    -----------------------User Statement------------------------------
+"As an owner I would like to be able to send customers a free movie ticket on there birthday to help draw attention to signing up for our app
+and additionally drum up extra business from family/friends and concessions."
+				       -------------------Goal Complete if-------------------------
+	"We can call this completeted if we can see the correct bool in unit tests to signal the customer needs an email for their birthday"
+bool HaveTheyBoughtRecently -could be a backlog
+	if(DateTime.Now - we need a purchase history) > 30)
+		     send them a coupon
+                                    -----------------------User Statement------------------------------
+			"As an owner I want to be able to see if a customer has visited in the past month and if not
+				I want to send them a 25% off coupon to help get them back in the doors."
+                                       -------------------Goal Complete if-------------------------
+		"We can call this a win when the bool in unit tests comes back correctly to signal the customer needs an email"
+Points- 2
+Unit Tests-
+FirstName_ReturnsCorrectFirstName()
+LastName_ReturnsCorrectLastName()
+FullName_ReturnsCorrectFullName()- provide first and last name
+Email_ReturnsCorrectString()
+Birthdate_ReturnsCorrectDate()
+Points- 1
+*Movie-
+MovieId Int [Key]
+MovieName (string)
+ReleaseDate DateTime - could be a backlog along with the bool below
+Bool NewRelease use info above (if released within the last two weeks)
+	also check if the ReleaseDate is in the future with an if statement
+	if((DateTime.Now - ReleaseDate) < 14)
+                                    -----------------------User Statement------------------------------
+     "As a new release movie buff I want to be able to see the movies that are going to be released over the next few weeks before they are released."
+			               -------------------Goal Complete if-------------------------
+	   "We will call this a win if the unit test shows the correct bool and shows that the movie has been released in the past 14 days"
+MovieDescription string
+MovieGenre enum horror, sci-fi, fantasy, romcom, action, kids, animation
+                                    -----------------------User Statement------------------------------
+                         "As a movie buff I want to see specific genres of the movies I am looking into seeing."
+                                      -------------------Goal Complete if-------------------------
+                           "We will call this a win if the unit test shows the correct genre for the movie"
+Points- 2
+Movie Tests-
+MovieName_ReturnsTheCorrectString()
+ReleaseDate_ReturnsCorrectDate()
+NewRelease_ReturnsCorrectBool()
+MovieDescription_ReturnsCorrectString()
+MovieGenre_ReturnsCorrectEnum()
+Points- 1
+*Ratings-
+RatingsId Int [Key]
+[ForeignKey]
+MovieId int
+MovieRating- enum RatingMovie (G = 1, PG, PG13, R)
+bool IsFamilyFriendly (include G and PG)
+                                    -----------------------User Statement------------------------------
+                   "As a Father I want to be able to see if the movie is appropriate for my children for their age groups."
+                                      -------------------Goal Complete if-------------------------
+		   "We will call this a win if it returns the movie back with the correct bool depending on the MovieRating"
+MovieReviewRating double
+                                    -----------------------User Statement------------------------------
+ 			"As a Single dad I don't get to the movies a lot, so I don't want to waste my time on a bad film
+					I want to only see the movie if it has a rating over 4 stars."
+                                      -------------------Goal Complete if-------------------------
+                         "We will call this a win if the return is a list of movies with a rating of 4 stars and above."
+Points- 2
+Ratings Tests-
+MovieRating_ReturnsTheCorrectEnum()
+IsFamilyFriendly_ReturnsTheCorrectBool()
+MovieReviewRating_ReturnsCorrect()
+Points -1
+Theatre-
+*TheatreId Int [Key]
+[ForeignKey] MovieId Int
+TicketPrice double
+List<Movie> SelectMovie
+EarlyTicketPrice double - backlog
+PickASeat string(like B12)- backlog
+Showtimes List<DateTime> -maybe a backlog
+"Need to have a way to see tickets sold each day for each movie"
+Points - 2
+TheatreTesting
+Stretch Goals-
+CRUD for each class which is 2-3 points per

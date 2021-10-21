@@ -1,0 +1,37 @@
+| User Stories |
+1-As a Father I want to be able to keep an eye on my kids while still being able to access concessions.
+--Concessions Class
+---Items, Prices, availability
+2-I want to see an easy to read list of the current movies and there ratings and reviews.
+--Get List of Movies(Ratings and Stars included)
+3-As a movie buff I want to see specific genres of the movies I am looking into seeing.
+--List of Genres to pick from
+4-As an online movie reviewer I need easy access to movies and there descriptions to make my reviewing process easier.
+--Movies listed in order of rating/stars
+5-As a college student I need to be able to compare movie prices to see who has the best deals for my weekly movie escapades.
+--Compare Prices of Movies
+6-My friends and I love having a fun night watching movies together, I want to be able to reserve our seats ahead of time even if we are running late.
+--Theatre Class
+---Seats, Show Times(early times-cheaper vs Latetimes-primeTime), Movies available, Pricings,
+--Reserve Seats based on seats available
+7-I want to be able to see the movies that are going to be released over the next few weeks.
+--DateTime for ReleaseDate to compare ReleaseDate to DateTime.Now 2 different ifs ---1 for Yet to be released/Unreleased
+---2 for Recently Released
+8-As a Shift Manager I want to be able to see the presale tickets.
+--Tickets Sold(int)
+9-As a Father I want to be able to see if the movie is appropriate for my children for their age groups.
+--Category List
+---Different Lists for each Rating(G,PG,etc)
+10-As an Owner being able to see the ticket sales over the last week or so for each movie being shown.
+--Each Movie with Sales over the DateTime(week)
+---Screens used for each movie with attendance numbers/empty seats
+11-As an owner I would like to be able to send customers a free movie ticket on there birthday to help draw attention to signing up for our app and additionally drum up extra business from family/friends and concessions.
+--Customer Birthdate
+---notify them within a week or 2 before their birthday
+12-As an owner I want to be able to see if a customer has visited in the past month and if not I want to send them a 25% off coupon to help get them back in the doors.
+--Log of Visits
+---Last visit(DateTime) compared to 30 days
+----Send Coupon to email if(lastVisit > 30)
+13-As a Single dad I don't get to the movies a lot, so I don't want to waste my time on a bad film I want to only see the movie if it has a rating over 4 stars.
+--using list of stars(ratings)
+---search through movies based on certain ratings
