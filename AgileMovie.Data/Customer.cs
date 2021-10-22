@@ -19,7 +19,7 @@ namespace AgileMovie.Data
         public Guid OwnerId { get; set; }
 
         [Required]
-        public string FirstName 
+        public string FirstName
         {
             get => _firstName;
             set
@@ -28,7 +28,7 @@ namespace AgileMovie.Data
                     throw new FormatException("First Name must be at least one character in the alphabet with no special characters.");
                 else
                     _firstName = value;
-            } 
+            }
         }
 
         [Required]
@@ -53,19 +53,20 @@ namespace AgileMovie.Data
 
         }
 
+        [Required]
         public string Email { get; set; }
 
         public DateTime BirthDate { get; set; }
 
-        public bool IsBirthDate14DaysAway 
-        { 
-            get 
+        public bool IsBirthDate14DaysAway
+        {
+            get
             {
                 var today = DateTime.Today;
                 var next = new DateTime(today.Year, BirthDate.Month, BirthDate.Day);
 
-                return ((next - today).Days == 14) ;
-            } 
+                return ((next - today).Days == 14);
+            }
         }
 
         //public bool IsBoughtRecently { get; set; }
