@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="Customer.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Movie.cs" />
     <Compile Include="Migrations\202110220149203_InitialCreate.cs" />
     <Compile Include="Migrations\202110220149203_InitialCreate.Designer.cs">
       <DependentUpon>202110220149203_InitialCreate.cs</DependentUpon>
