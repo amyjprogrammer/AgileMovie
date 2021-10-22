@@ -80,15 +80,18 @@ MovieRating_ReturnsTheCorrectEnum()
 IsFamilyFriendly_ReturnsTheCorrectBool()
 MovieReviewRating_ReturnsCorrect()
 Points -1
+
 Theatre-
 *TheatreId Int [Key]
 [ForeignKey] MovieId Int
 TicketPrice double
 List<Movie> SelectMovie
-EarlyTicketPrice double - backlog
-PickASeat string(like B12)- backlog
-Showtimes List<DateTime> -maybe a backlog
+-EarlyTicketPrice double - backlog
+-PickASeat string(like B12)- backlog
+-Showtimes List<DateTime> -maybe a backlog
+
 "Need to have a way to see tickets sold each day for each movie"
+
 Points - 2
 TheatreTesting
 Stretch Goals-
