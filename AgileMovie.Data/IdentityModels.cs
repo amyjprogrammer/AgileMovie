@@ -33,12 +33,13 @@ namespace AgileMovie.Data
             return new ApplicationDbContext();
         }
 
-        DbSet<Customer> Customers { get; set; }
-        /*DbSet<Movie> Movies { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
-        DbSet<Rating> Ratings { get; set; }
+        /*public DbSet<Movie> Movies { get; set; }
 
-        DbSet<Theatre> Theatres { get; set; }*/
+        public DbSet<Rating> Ratings { get; set; }
+
+        public DbSet<Theatre> Theatres { get; set; }*/
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
