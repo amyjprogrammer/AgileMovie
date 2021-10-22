@@ -94,6 +94,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Theatre.cs" />
+    <Compile Include="Ratings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
