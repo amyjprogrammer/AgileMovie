@@ -8,20 +8,37 @@ using System.Threading.Tasks;
 
 namespace AgileMovie.Data
 {
-    class Ratings
+    public class Ratings
     { 
         [Key]
        public int RatingsId { get; set; } 
     
-       [ForeignKey]
+       [ForeignKey(nameof (Movie))]
         public int MovieId { get; set; }
 
         [Required]
         public double MovieReviewRating { get; set; } 
-        [Required]
-        public bool IsFamilyFriendly { get; set; }
         
-        public enum MovieRating
+        public bool IsFamilyFriendly
+        { 
+            get
+            {
+                switch(RatingMovie)
+                {
+                    case MovieRating.G:
+                    case MovieRating.PG:
+                        return true;
+
+                    case MovieRating.PG13:
+                    case MovieRating.R:
+                    default:
+                        return false;
+                }
+            }
+        }
+
+        public MovieRating RatingMovie { get; set; }
+        public enum MovieRating 
         { 
           G = 1, 
           PG,
