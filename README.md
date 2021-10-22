@@ -24,10 +24,10 @@ ________________________________________________________________________________
 
 The Repository currently holds the setup for Agile along with the beginning of the Movie App with CRUD capabilities.  
 
-* First Project using Agile (Please see Solution Items)
-	- created two Personas 
+* First Project using Agile (Please see Solution Items and Resources)
+	- created two Personas (Resources- PersonaOne and PersonaTwo)
 	- 12 points worth of tickets (Agile Tickets)
 	- 13 User stories (User Stories)
-	- two week Sprint plan (Sprint)
+	- two week Sprint plan (Resources- Sprint)
 
 
