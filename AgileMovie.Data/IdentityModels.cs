@@ -35,9 +35,9 @@ namespace AgileMovie.Data
 
         public DbSet<Customer> Customers { get; set; }
 
-        /*public DbSet<Movie> Movies { get; set; }
+        public DbSet<Movie> Movies { get; set; }
 
-        public DbSet<Rating> Ratings { get; set; }
+/*        public DbSet<Rating> Ratings { get; set; }
 
         public DbSet<Theatre> Theatres { get; set; }*/
 
