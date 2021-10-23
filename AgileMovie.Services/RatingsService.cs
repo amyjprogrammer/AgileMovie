@@ -9,14 +9,14 @@ namespace AgileMovie.Services
 {
     public class RatingsService
     {
-        public bool CreateRating(Ratings model)
+       /* public bool CreateRating(Ratings model)
         {
-            var entity = 
+            var entity =
                 new Rating()
                 {
-                    
-                }
+
+                };
             
-        }
+        }*/
     }
 }

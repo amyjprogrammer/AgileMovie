@@ -4,7 +4,7 @@ _____________________________________________________
 
 Eleven Fifty Academy is a 501(c)(3) nonprofit code academy and was the first coding 
 bootcamp in Indiana. They believe in impacting the lives of students by providing relevant coding 
-skills for the most in-demand jobs in today�s tech ecosystem. Check out the website: <https://elevenfifty.org/>
+skills for the most in-demand jobs in today's tech ecosystem. Check out the website: <https://elevenfifty.org/>
 
 ______________________________________________________________________________________________________________
 
