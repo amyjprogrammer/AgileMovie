@@ -10,6 +10,7 @@ namespace AgileMovie.Services
 {
     public class RatingsService
     {
+
         private readonly int _userId;
 
         public RatingsService(int userId)
@@ -17,7 +18,8 @@ namespace AgileMovie.Services
             _userId = userId;
         }
 
-        public bool CreateRating(RatingCreate model)
+    /*    public bool CreateRating(RatingCreate model)*/
 
     };
 }
+

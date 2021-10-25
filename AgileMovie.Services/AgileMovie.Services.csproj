@@ -55,8 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerService.cs" />
+    <Compile Include="MovieService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RatingsService.cs" />
+    <Compile Include="TheatreService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -67,13 +69,10 @@
       <Project>{E12D546D-587C-491A-82EB-E7CE638CE48F}</Project>
       <Name>AgileMovie.Data</Name>
     </ProjectReference>
-
-
     <ProjectReference Include="..\AgileMovie.Models\AgileMovie.Models.csproj">
       <Project>{2912EE73-9037-45B9-A61A-A157FAFCDB87}</Project>
       <Name>AgileMovie.Models</Name>
     </ProjectReference>
-
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

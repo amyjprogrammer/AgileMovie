@@ -67,6 +67,10 @@
     <Compile Include="RatingEdit.cs" />
     <Compile Include="RatingDetail.cs" />
     <Compile Include="RatingListItem.cs" />
+    <Compile Include="TheatreCreate.cs" />
+    <Compile Include="TheatreDetail.cs" />
+    <Compile Include="TheatreEdit.cs" />
+    <Compile Include="TheatreListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

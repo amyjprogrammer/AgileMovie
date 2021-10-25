@@ -10,7 +10,6 @@ namespace AgileMovie.Models
 {
    public class MovieCreate
    {
-        public int MovieId { get; set; }
         [Required]
         [MaxLength(100, ErrorMessage = "Please enter less characters.")]
         public string MovieName { get; set; }
