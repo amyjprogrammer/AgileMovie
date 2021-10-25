@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using AgileMovie.WebAPI.Models;
+using AgileMovie.Data;
 
 namespace AgileMovie.WebAPI
 {
