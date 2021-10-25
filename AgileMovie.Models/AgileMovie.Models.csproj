@@ -64,6 +64,10 @@
     <Compile Include="CustomerListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RatingCreate.cs" />
+    <Compile Include="TheatreCreate.cs" />
+    <Compile Include="TheatreDetail.cs" />
+    <Compile Include="TheatreEdit.cs" />
+    <Compile Include="TheatreListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
