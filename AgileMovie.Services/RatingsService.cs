@@ -1,4 +1,5 @@
-﻿using AgileMovie.Data;
+﻿
+using AgileMovie.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,16 @@ namespace AgileMovie.Services
 {
     public class RatingsService
     {
-       /* public bool CreateRating(Ratings model)
-        {
-            var entity =
-                new Rating()
-                {
 
-                };
-            
-        }*/
-    }
+        private readonly int _userId;
+
+        public RatingsService(int userId)
+        {
+            _userId = userId;
+        }
+
+    /*    public bool CreateRating(RatingCreate model)*/
+
+    };
 }
+
